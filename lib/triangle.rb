@@ -7,4 +7,13 @@ class Triangle
   define_method(:is_triangle?) do
      @a + @b >= @c && @b + @c >= @a && @a + @c >= @b
   end
+  define_method(:kind) do
+    if @a == @b && @b == @c
+      "equilateral"
+    elsif (@a == @b && @a != @c) || (@a == @c && @a != @b) || (@b == @c && @b != @a)
+      "isosceles"
+    else
+      "not a triangle"
+    end
+  end
 end
