@@ -12,6 +12,8 @@ class Triangle
       "equilateral"
     elsif (@a == @b && @a != @c) || (@a == @c && @a != @b) || (@b == @c && @b != @a)
       "isosceles"
+    elsif @a != @b && @b != @c
+      "scalene"
     else
       "not a triangle"
     end

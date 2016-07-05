@@ -23,6 +23,10 @@ describe ('Triangle') do
       new_triangle = Triangle.new(5,5,7)
       expect(new_triangle.kind()).to eq('isosceles')
     end
+    it('returns "scalene" if triangle is scalene') do
+      new_triangle = Triangle.new(5,6,7)
+      expect(new_triangle.kind()).to eq('scalene')
+    end
   end
 
 
