@@ -1,8 +1,8 @@
 class Triangle
   define_method(:initialize) do |a, b, c|
-    @a = a
-    @b = b
-    @c = c
+    @a = a.to_i
+    @b = b.to_i
+    @c = c.to_i
   end
 
   define_method(:kind) do
